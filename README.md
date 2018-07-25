@@ -7,3 +7,6 @@
   + shuffle deck 
   + deal cards 
 
+// mix new cards 
+cd cards 
+iex -S mix
