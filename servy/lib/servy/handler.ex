@@ -1,7 +1,8 @@
 defmodule Servy.Handler do
   def handle(request) do
-    conv = parse(request)
-    conv = route(conv) format_response(conv)
+    #conv = parse(request) conv = route(conv) format_response(conv)
+    # create pipeline
+    request |> parse |> route |> format_response
   end
 
   def parse(request) do
